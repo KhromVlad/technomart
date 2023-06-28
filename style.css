@@ -6,6 +6,10 @@
   font-family: "Cuprum";
   src: url(/fonts/Cuprum-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "PTSans";
+  src: url(/fonts/PTSans-Regular.ttf) format("truetype");
+}
 .nav {
   background-color: rgba(0, 0, 0, 0.01);
 }
@@ -20,7 +24,6 @@
   .cap-list {
     font-family: "Cuprum";
     display: flex;
-    list-style-type: none;
     color: #ffffff;
     justify-content: space-around;
     height: 42px;
@@ -29,6 +32,7 @@
   }
   .cap-list__item {
     margin: auto;
+    list-style-type: none;
   }
   .cap-list__item-icon {
     margin: 0 10px;
@@ -109,16 +113,15 @@
   .menu-list__item {
     margin: 20px 25px;
     font-family: "Cuprum";
+    
   }
   .catalog {
     font-family: "Cuprum";
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    position: relative;
   }
   .catalog-mat {
     width: 300px;
@@ -144,8 +147,11 @@
     width: 620px;
     height: 266px;
     background-image: url(/images/reklama-bosch.png);
-    margin: 10px;
-    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .catalog-reklama__capital {
+    margin: 0;
   }
   .catalog-sale {
     width: 300px;
@@ -158,10 +164,222 @@
     width: 300px;
     height: 123px;
     background: #ffc047;
-    margin: 0px;
+    margin: 10px;
     margin-right: 0;
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
   }
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .right-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-text {
+    background-color: #f9f5f0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Cuprum";
+    text-transform: uppercase;
+  }
+  .product-text__capital {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    margin-left: 28px;
+  }
+  .product-text__text {
+    padding: 10px 24px;
+    margin: auto 0;
+    background-color: #ee3643;
+    color: #ffffff;
+    margin-right: 14px;
+  }
+  .product-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    font-family: "pt sans";
+  }
+  .product-list__item {
+    text-align: center;
+    padding: 6px 18px 20px 18px;
+    border: 1px solid #eaeaea;
+  }
+  .product-list__item-img {
+    width: 184px;
+    height: 164px;
+  }
+  .product-list__item-text {
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #a9a9a9;
+  }
+  .product-list__item-sale {
+    width: 141px;
+    height: 38px;
+    margin: auto;
+    color: #ffffff;
+    background-color: #ee3643;
+  }
+  .producer-text {
+    background-color: #f9f5f0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Cuprum";
+    text-transform: uppercase;
+  }
+  .producer-text__capital {
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c;
+    margin-left: 28px;
+  }
+  .producer-text__text {
+    padding: 10px 24px;
+    margin: auto 0;
+    background-color: #ee3643;
+    color: #ffffff;
+    margin-right: 14px;
+  }
+  .producer-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .producer-list__item {
+    width: 220px;
+    height: 145px;
+    border: 1px solid #eaeaea;
+    margin: 5px;
+  }
+  .producer-list__item-img {
+    margin: 50px;
+    width: 130px;
+    height: 30px;
+  }
+  .service {
+    background: #f1f5f7;
+    margin-left: 45px;
+  }
+  .service-list {
+    display: flex;
+  }
+  .service-text__capital {
+    font-family: 'Cuprum';
+    font-weight: 400;
+font-size: 30px;
+line-height: 30px;
+text-transform: uppercase
+  }
+  .service-text__text {
+    font-family: 'PTSans';
+font-weight: 400;
+font-size: 13px;
+line-height: 24px;
+  }
+  .service-list__list {
+    font-family: "Cuprum";
+    list-style-type: none;
+    font-size: 21px;
+    line-height: 30px;
+    border-right: 10px;
+
+    margin: auto 0;
+  }
+  .service-list__list-item {
+    width: 240px;
+    height: 61px;
+    background-color: #32425c;
+    color: #ffffff;
+  }
+  .service-list__list-item:first-child {
+    background-color: #ffffff;
+    color: #32425c;
+  }
+  .service-list__list-item__text {
+    margin: 0;
+  }
+  .service-list__info-capital {
+    font-family: 'Cuprum';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .service-list__info-text {
+    font-family: 'PTSans';
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .company-capital {
+    font-family: 'Cuprum';
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .contact-capital {
+    font-family: 'Cuprum';
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.company-text {
+  font-family: 'PTSans';
+  font-size: 13px;
+  line-height: 24px;
+}
+.contact-text {
+  font-family: 'PTSans';
+  font-size: 13px;
+  line-height: 24px;
+}
+.company-list__item {
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 24px;
+  list-style-image: url(/images/style-marker.png);
+  
+}
+.company-list__button {
+  font-family: 'Cuprum';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 0px;
+  width: 220px;
+  height: 38px;
+}
+.contact-button {
+  font-family: 'Cuprum';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: 0px;
+  width: 300px;
+  height: 38px;
+}
+.contact {
+  margin-left: ;
+  width: 300px;
+}
+.social {
+  
+}
 }
