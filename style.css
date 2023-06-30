@@ -248,18 +248,17 @@
     list-style-type: none;
     padding: 0;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
   .producer-list__item {
+    display: block;
     width: 220px;
     height: 145px;
     border: 1px solid #eaeaea;
     margin: 5px;
   }
   .producer-list__item-img {
-    margin: 50px;
-    width: 130px;
-    height: 30px;
+    display: block;
+    margin: auto;
   }
   .service {
     background: #f1f5f7;
@@ -381,5 +380,34 @@ line-height: 24px;
 }
 .social {
   
+}
+.footer1 {
+  margin-top: 50px;
+  background-color: #32425c;
+  margin-bottom: 0;
+}
+.footer2 {
+  background-color: #293449;
+  margin: 0;
+}
+.footer-info {
+  display: flex;
+}
+.address-text {
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.social-text__text {
+  margin-top: 0;
+}
+.social-connection__text {
+  margin-bottom: 0;
+}
+.footer-nav__list {
+  list-style-type: none;
+  display: flex;
+  color: #ffffff;
 }
 }
