@@ -269,7 +269,6 @@
   }
   .service {
     background: #f1f5f7;
-    margin-left: 45px;
     padding-top: 10px;
     padding-bottom: 100px;
   }
@@ -287,15 +286,13 @@
   }
   .service-list {
     width: 130px;
-    padding: 5px 0px;
-    background-color: #32425c;
+    padding: 10px 0px;
   }
   .label {
     content: "";
     background-color: #32425c;
     color: #ffffff;
-    padding: 10px 9px;
-  }
+padding: 10px 83px 10px 20px;  }
   input:checked + .label {
     content: "";
     background-color: #ffffff;
@@ -305,8 +302,7 @@
     content: "";
     background-color: #32425c;
     color: #ffffff;
-    padding: 10px 9px;
-  }
+padding: 10px 84px 10px 20px;  }
   input:checked + .labeltwo {
     content: "";
     background-color: #ffffff;
@@ -316,7 +312,8 @@
     content: "";
     background-color: #32425c;
     color: #ffffff;
-    padding: 10px 17.5px;
+    padding: 10px 101px 10px 20px;
+    text-align: left;
   }
   input:checked + .labeltree {
     content: "";
@@ -410,6 +407,7 @@
     margin-top: 50px;
     background-color: #32425c;
     margin-bottom: 0;
+    padding-bottom: 50px;
   }
   .footer2 {
     background-color: #293449;
@@ -431,11 +429,60 @@
     margin-bottom: 0;
   }
   .footer-nav__list {
+    display:flex ;
     list-style-type: none;
     color: #ffffff;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+width: 600px;
+margin: 0;
   }
   .footer-nav__list-item {
-    margin: 30px;
+    margin: 25px;
+  }
+  .footer-nav__list-item:nth-last-child(-n+4) {
+    color: #ffd180
+  }
+  .social-text__text {
+    font-family: "Cuprum";
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 40px auto;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-list {
+    display: flex;
+    list-style-type: none;
+  }
+  .social-list__item {
+    display: flex;
+    margin: auto 5px;
+    width: 44px;
+    height: 44px;
+    background-color: #212A3A;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-list__item--img {
+    
+  }
+  .social-connection {
+    display: flex;
+    width: 300px;
+  }
+  .social-connection {
+    font-family: "Cuprum";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    margin: auto 0px;
   }
 }
