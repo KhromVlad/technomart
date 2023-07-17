@@ -33,9 +33,32 @@
   .cap-list__item {
     margin: auto;
     list-style-type: none;
+    cursor: pointer;
+  }
+  .cap-list__item:last-child {
+    background-color: #63a63e;
+    padding: 10px;
+  }
+  .cap-list__item:last-child:active {
+    opacity: 0.5;
   }
   .cap-list__item-icon {
     margin: 0 10px;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .cap-list__item-logo {
+    cursor: pointer;
+  }
+  .cap-list__item-logo:active {
+     opacity: 0.6;
+  }
+  .cap-list__item-icon:hover {
+    opacity: 1;
+
+  }
+  .cap-list__item-icon:active {
+    opacity: 0.5;
   }
   .info {
     display: flex;
@@ -87,6 +110,7 @@
     font-family: "Cuprum";
     font-size: 21px;
     line-height: 21px;
+    cursor: pointer;
   }
   .profile-button__reg {
     width: 150px;
@@ -97,6 +121,21 @@
     font-family: "Cuprum";
     font-size: 21px;
     line-height: 21px;
+    cursor: pointer;
+  }
+  .profile-button__enter:hover {
+    color: #ee3643;
+  }
+  .profile-button__enter:active {
+    opacity: 0.5;
+    color: #c5c5c5;
+  }
+  .profile-button__reg:hover {
+    color: #ee3643;
+  }
+  .profile-button__reg:active {
+    opacity: 0.5;
+    color: #c5c5c5;
   }
   .menu {
     padding: 0;
@@ -111,8 +150,19 @@
     box-shadow: 0px -5px 0px 0px rgba(41, 52, 73, 1) inset;
   }
   .menu-list__item {
-    margin: 20px 25px;
+    padding: 20px 30px;
     font-family: "Cuprum";
+    cursor: pointer;
+  }
+  .menu-list__item:hover {
+    background-color: #293449;
+  }
+  .menu-list__item:active {
+    opacity: 0.5;
+  }
+  .catalog-new {
+    text-decoration: none;
+    color: #ffffff;
   }
   .catalog {
     font-family: "Cuprum";
@@ -157,6 +207,15 @@
   .catalog-item__dostavka {
     background: #ffc047;
     margin-right: 0;
+  }
+  .catalog-item__text {
+    cursor: pointer;
+  }
+  .catalog-item__text:hover {
+    opacity: 0.8;
+  }
+  .catalog-item__text:active {
+    opacity: 0.3;
   }
   .top-bar {
     display: flex;
@@ -207,6 +266,7 @@
     text-align: center;
     padding: 6px 18px 20px 18px;
     border: 1px solid #eaeaea;
+    cursor: pointer;
   }
   .product-list__item-img {
     width: 184px;
@@ -226,6 +286,40 @@
     /* border-top 1px solid red; 
          border-bottom: 1px solid red;
          transform: rotate(20deg); */
+  }
+  .product-list__item-img:hover {
+display: none;
+  }
+  .knocks:hover {
+    display: block;
+  }
+  .knocks {
+    display: none;
+    font-family: "Cuprum";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .knocksone {
+    background-color: #63a63e;
+    width: 135px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    color: #ffffff;
+  }
+  .knockstwo {
+    width: 129px;
+    padding: 10px 0;
+    margin: auto;
+    border: 3px solid #63a63e;
+    color: #32425c;
+  }
+  .text-one {
+    margin: 0;
+  }
+  .text-two {
+    margin: 0;
   }
   .producer-text {
     background-color: #f9f5f0;
@@ -262,6 +356,14 @@
     height: 145px;
     border: 1px solid #eaeaea;
     margin: 5px;
+    cursor: pointer;
+  }
+  .producer-list__item:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+  }
+  .producer-list__item:active {
+    opacity: 0.5;
   }
   .producer-list__item-img {
     display: block;
@@ -398,10 +500,7 @@ padding: 10px 84px 10px 20px;  }
     height: 38px;
   }
   .contact {
-    margin-left: ;
     width: 300px;
-  }
-  .social {
   }
   .footer1 {
     margin-top: 50px;
@@ -440,9 +539,17 @@ margin: 0;
   }
   .footer-nav__list-item {
     margin: 25px;
+    cursor: pointer;
   }
   .footer-nav__list-item:nth-last-child(-n+4) {
     color: #ffd180
+  }
+  .footer-nav__list-item:hover {
+    text-decoration: underline;
+  }
+  .footer-nav__list-item:active {
+    opacity: 0.5;
+    text-decoration: none;
   }
   .social-text__text {
     font-family: "Cuprum";
@@ -469,13 +576,32 @@ margin: 0;
     border-radius: 50px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
-  .social-list__item--img {
-    
+  .social-list__item:hover {
+    background-color: #ee3643;
   }
   .social-connection {
     display: flex;
     width: 300px;
+  }
+  .social-connection__cap {
+    margin: 0;
+  }
+  .social-connection__text {
+    margin: 0;
+    cursor: pointer;
+    color: #ffd180;
+  }
+  .social-connection__text:hover {
+    text-decoration: underline;
+  }
+  .social-connection__text:active {
+    color: #ee3643;
+    text-decoration: none;
+  }
+  .social-text__one {
+    margin-right: 40px;
   }
   .social-connection {
     font-family: "Cuprum";
@@ -484,5 +610,9 @@ margin: 0;
     line-height: 18px;
     color: #ffffff;
     margin: auto 0px;
+  }
+  .perek {
+    text-decoration: none;
+    color: #ffffff;
   }
 }
